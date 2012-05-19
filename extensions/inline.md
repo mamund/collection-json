@@ -1,4 +1,4 @@
-``json
+```json
 { "collection" :
   {
     "version" : "1.0",
@@ -24,3 +24,4 @@
     }
   }
 }
+```
