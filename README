@@ -1,12 +1,16 @@
-Collection+JSON Media Type
+# Collection+JSON Media Type
 
 This repo is a 'stub' for issues surrounding the development and maintenance of the Collection+JSON media type.
 See: 
-Specification: http://amundsen.com/media-types/collection/
-Discussion Group: https://groups.google.com/forum/?fromgroups#!forum/collectionjson
+- Specification: http://amundsen.com/media-types/collection/
+- Discussion Group: https://groups.google.com/forum/?fromgroups#!forum/collectionjson
 
-Feel free to log issues here right now.
-I'll also post the spec here to allow fork and pull.
-Soon, I'll open up a process for registering and reviewing CJ extenstions, too.
+I've added a section on extensions w/ links to any related discussions. I'll also post the spec here sometime soon. 
+
+I have also started a section on very simple server & client examples (see "basic" folder here). These will increase over time.
+
+Feel free to fork/pull on this repo to add new proposed extensions, etc. anytime.
+
+Thanks!
 
 MCA
