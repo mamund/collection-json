@@ -1,3 +1,11 @@
+# Proposed Inline Extension
+
+Proposed by +wycats[1]
+
+1. Add an optional top-level object <code>inline</code> as a child of <code>collection</code>
+2. Add an optional property to the <code>link</code> object: <code>length</code> (number)
+3. Add an optional property to the <code>link</code> object: <code>inline</code> (boolean)
+
 ```json
 { "collection" :
   {
