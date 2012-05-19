@@ -11,22 +11,26 @@ Support errors collection to allow multiple error objects to be returned in the 
     "version" : "1.0",
     "href" : "http://example.org/friends/",
     
-    "errors" : {
-      {
-        "password": [{
+    "errors" :
+    {
+      "password": 
+      [
+        {
           "title": "Validation Error",
           "code": "X422",
           "message": "Must be at least 6 characters"
-        }, {
+        }, 
+        {
           "title": "Validation Error",
           "code": "X422",
           "message": "Must contain at least one number"
-        }],
-        "name": {
-          "title": "Validation Error",
-          "code": "X422",
-          "message": "Must not be blank"
         }
+      ],
+      "name": 
+      {
+        "title": "Validation Error",
+        "code": "X422",
+        "message": "Must not be blank"
       }
     }
   } 
