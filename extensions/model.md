@@ -1,6 +1,6 @@
-# Model Mod
+# Model
 
-Support decorating links w/ a "model" value [1].
+Support decorating links w/ a "model" value[1].
 
 1. Add an optional property on <code>link</code> objects: <code>model</code> (STRING)
 
@@ -20,4 +20,4 @@ Support decorating links w/ a "model" value [1].
 ```
 
 ### References
-1. https://groups.google.com/forum/?fromgroups#!topic/collectionjson/9R-BLJQ8bLk
+1. https://groups.google.com/forum/?fromgroups#!topic/collectionjson/8AknQAkEu5k

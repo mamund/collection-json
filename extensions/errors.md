@@ -1,6 +1,6 @@
 # Errors Collection
 
-Support errors collection to allow multiple error objects to be returned in the same representation.
+Support errors collection to allow multiple error objects to be returned in the same representation.[1]
 
 1. Add an optional top-level object: <code>errors</code>
 2. Support optional arrays for a single named error object
@@ -36,3 +36,6 @@ Support errors collection to allow multiple error objects to be returned in the 
   } 
 }
 ```
+
+### References
+1. https://groups.google.com/forum/?fromgroups#!topic/collectionjson/9R-BLJQ8bLk
