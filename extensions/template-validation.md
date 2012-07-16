@@ -16,8 +16,8 @@ Support template data validation by adding required fields (minimal dataset) and
         {"name" : "username", "value" : "", "prompt" : "Login Name", "regexp" : "^[a-zA-Z0-9]*$", "required" : "true"},
         {"name" : "email", "value" : "", "prompt" : "Email", "regexp" : "^[\w\d.@]*$", "required" : "true"},
         {"name" : "gender", "value" : "", "prompt" : "Gender", "regexp" : "^(m|f)$"}
-      ],
-    },
+      ]
+    }
   }
 }
 ```
