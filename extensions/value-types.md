@@ -3,39 +3,23 @@
 Support Array values[1].
 Rationale:
 The core spec is severely limiting the possible objects you can express.
-I would really like to be able to have any type of JSON value (objects, arrays, simple values) in the "value" property of 
-a data object, but I can see how this may become a problem.
+I am sure more people would like to express more complex items, templates and queries.
 
+This extension changes the property concept to add two more 
+Since the value attribute is limited in section 6.6, and it has been defined to be optional.
 
-1. Expand the "value" property to allow for JSON arrays of
-1.1: Simple values already defined in the core spec.
-1.1: Embedded data objects. This SHOULD only be one level deep.
+The definition of the value property has not changed.
 
+I have taken this concept a bit further and will add to the property definition.
 
-```json
-{ "collection" :
-  {
-    "version" : "1.0",
-    "href" : "http://example.org/sessions/",
+"""
+A Property MAY have one of the three properties "value", "array" or "object".
+An array value is defined to only contain the scalar values as defined by section 6.6. 
+An object is a JSON object containing key value pairs where the values are restricted by section 6.6.
 
-    "items" : [
-      {
-        "href" : "http://example.org/session/1",
-        "data" : [
-          {"name" : "title", "value" : "J. Doe does something strange", "prompt" : "Title"},
-          {"name" : "tags", "value" : ["article", "json"], "prompt" : "Tags"},
-          {"name" : "contacts", "value" : [
-		{ "name": "name", "value": "foo"}
-	    ], 
-          "prompt" : "Contacts"}
-        ],
-      }
-    ],
-  }
-}
-```
+"""
 
-2. Allow any type of JSON value in the data, "value" property.
+Example:
 
 ```json
 { "collection" :
@@ -48,8 +32,8 @@ a data object, but I can see how this may become a problem.
         "href" : "http://example.org/session/1",
         "data" : [
           {"name" : "title", "value" : "J. Doe does something strange", "prompt" : "Title"},
-          {"name" : "tags", "value" : ["article", "json"], "prompt" : "Tags"},
-          {"name" : "contacts", "value" : 
+          {"name" : "tags", "array" : ["article", "json"], "prompt" : "Tags"},
+          {"name" : "contacts", "object" : 
 		{ "name", "foo"}
 	    ], 
           "prompt" : "Contacts"}
