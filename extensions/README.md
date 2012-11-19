@@ -13,10 +13,8 @@ It is also possible that one or more registered extensions may, at some future p
 ## Optional, Ignored
 It is important to keep in mind that all CJ extensions MUST be treated as _optional_ and _ignored_. That means the extension cannot invalidate or override any baseline functionality defined in CJ and that you should expect existing client implementations to ignore this extension. This rule will affect the design and feasibility of extensions; in some cases making a particular extension implementation almost impossible. 
 
-==Process for Adding an Extension==
-The process for adding an extension is raather informal, but has been designed
-to take advantage of the existing CJ community for feedback and approval. Teh
-basic steps are as follows:
+## Process for Adding an Extension
+The process for adding an extension is raather informal, but has been designed to take advantage of the existing CJ community for feedback and approval. The basic steps are as follows:
 
  1. Start a discussion thread on collection-json mailing list
  2. Fork the CJ repo
@@ -30,4 +28,4 @@ Its important to point out that no one is _required_ to register their extension
       
 Feel free to discuss this, and any other topic, on the collection-json mailing list any time.
       
-i<a href="http://twitter.com/mamund" title="@mamund">Mike Amundsen</a>
+<a href="http://twitter.com/mamund" title="@mamund">Mike Amundsen</a>
