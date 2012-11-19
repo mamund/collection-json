@@ -14,14 +14,15 @@ It is also possible that one or more registered extensions may, at some future p
 It is important to keep in mind that all CJ extensions MUST be treated as _optional_ and _ignored_. That means the extension cannot invalidate or override any baseline functionality defined in CJ and that you should expect existing client implementations to ignore this extension. This rule will affect the design and feasibility of extensions; in some cases making a particular extension implementation almost impossible. 
 
 ## Process for Adding an Extension
-The process for adding an extension is raather informal, but has been designed to take advantage of the existing CJ community for feedback and approval. The basic steps are as follows:
+The process for adding an extension is rather informal, but has been designed to take advantage of the existing CJ community for feedback and approval. The basic steps are as follows:
 
  1. Start a discussion thread on collection-json mailing list
  2. Fork the CJ repo
- 3. Add a new extension definition to the extensions folder in your repo
- 4. Send a Pull Request to the shared repo
- 5. Continue discussions in the ML and the repo comments
- 6. Once all is settled, the PR will be merged into the CJ master repo
+ 3. Create a new branch (use a name that relates to your extension)
+ 4. Add a new extension definition to the extensions folder in your repo
+ 5. Send a Pull Request to the shared repo
+ 6. Continue discussions in the ML and the repo comments
+ 7. Once all is settled, the PR will be merged into the CJ master repo
       
 ## Approval is Not Required
 Its important to point out that no one is _required_ to register their extensions in the CJ repo. This is an optional process designed to improve the quality of the extension set and increase the likelihood of their use across the CJ community. 
