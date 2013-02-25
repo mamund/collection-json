@@ -33,10 +33,7 @@ Example:
         "data" : [
           {"name" : "title", "value" : "J. Doe does something strange", "prompt" : "Title"},
           {"name" : "tags", "array" : ["article", "json"], "prompt" : "Tags"},
-          {"name" : "contacts", "object" : 
-		{ "name", "foo"}
-	    ], 
-          "prompt" : "Contacts"}
+          {"name" : "contacts", "object" : { "name", "foo"}, "prompt" : "Contacts"}
         ],
       }
     ],
