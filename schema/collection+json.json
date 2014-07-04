@@ -1,0 +1,103 @@
+{
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"title": "Collection+JSON",
+	"description": "JSON Schema for Collection+JSON documents.",
+
+	"type": "object",
+	"additionalProperties": false,
+	"properties": { 
+		"collection": { "$ref": "#/definitions/collection" },
+		"template": { "$ref": "#/definitions/template" }
+	},
+
+	"definitions": {
+		"collection": {
+			"description": "Contains all the 'records' in the representation.",
+			"type": "object",
+			"properties": {
+				"version": { "type": "string", "default": "1.0" },
+				"href": { "type": "string", "format": "uri" },
+				"links": { "$ref": "#/definitions/links" },
+				"items": { "$ref": "#/definitions/items" },
+				"queries": { "$ref": "#/definitions/queries" },
+				"template": { "$ref": "#/definitions/template" },
+				"error": { "$ref": "#/definitions/error" }
+			}
+		},
+
+		"data": {
+			"description": "Contains additional information on the latest error condition reported by the server.",
+			"type": "array",
+			"items": {
+				"type": "object",
+				"required": [ "name" ],
+				"properties": {
+					"name": { "type": "string" },
+					"value": { "type": [ "string", "number", "boolean", "null" ] },
+					"prompt": { "type": "string" }
+				}
+			}
+		},
+
+		"error": {
+			"description": "Contains additional information on the latest error condition reported by the server.",
+			"type": "object",
+			"properties": {
+				"title": { "type": "string" },
+				"code": { "type": "string" },
+				"message": { "type": "string" }
+			}
+		},
+
+		"items": {
+			"description": "Represents the list of records in the Collection+JSON document.",
+			"type": "array",
+			"items": {
+				"type": "object",
+				"properties": {
+					"href": { "type": "string", "format": "uri" },
+					"data": { "$ref": "#/definitions/data" },
+					"links": { "$ref": "#/definitions/links" }
+				}
+			}
+		},
+
+		"links": {
+			"type": "array",
+			"items": {
+				"type": "object",
+				"required": [ "href", "rel" ],
+				"properties": {
+					"href": { "type": "string", "format": "uri" },
+					"rel": { "type": "string" },
+					"name": { "type": "string" },
+					"render": { "type": "string" },
+					"prompt": { "type": "string" }
+				}
+			}
+		},
+
+		"queries": {
+			"type": "array",
+			"items": {
+				"type": "object",
+				"required": [ "href", "rel" ],
+				"properties": {
+					"href": { "type": "string", "format": "uri" },
+					"rel": { "type": "string" },
+					"name": { "type": "string" },
+					"prompt": { "type": "string" },
+					"data": { "$ref": "#/definitions/data" }
+				}
+			}
+		},
+
+		"template": {
+			"description": "Contains all the input elements used to add or edit collection 'records'.",
+			"type": "object",
+			"properties": {
+				"data": { "$ref": "#/definitions/data" }
+			}
+		}
+	}
+}
